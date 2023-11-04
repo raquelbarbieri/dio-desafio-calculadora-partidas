@@ -58,3 +58,7 @@ else:
   posicao = 1
 
 print(f"{nickname} está na posição {posicao} no ranking.")
+
+while posicao >1:
+  print("Continue assim para chegar no topo!")
+  break
