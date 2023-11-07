@@ -1,6 +1,6 @@
 # dio-desafio-calculadora-partidas
 
-Repositório criado para o desafio da DIO “Calculadora de Partidas Rankeadas”.
+Repositório criado para o desafio da DIO “Calculadora de Partidas Rankeadas", lançado no Bootcamp Potência Tech iFood - Programação do Zero.
 
 **Proposta:** Criação de uma calculadora para descobrir o nível e a posição do jogador, tendo como parâmetro a quantidade de vitórias e derrotas de um usuário. 
 
