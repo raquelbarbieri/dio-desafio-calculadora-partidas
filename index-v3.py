@@ -1,46 +1,63 @@
-nome = input("Digite o seu nome para começar a aventura do herói: ")
+nickname = input("Digite o seu nickname para usar a Calculadora de Ranking: ")
+print(f"Olá, herói {nickname}. Seja bem-vindo!")
 
-print("Olá, " + nome + ". Seja bem-vindo!")
+import time
+time.sleep(1)
 
-idade = input("Digite a sua idade: ")
+print("Vamos começar?")
 
-tipo = input("Agora, escolha o seu tipo de herói [guerreiro, mago, monge, ninja]: ").upper()
+time.sleep(2)
 
-ataque = ""
+vitorias = int(input("Primeiro, digite o seu número de vitórias: "))
 
-if tipo == "GUERREIRO":
-  ataque = "espada"
-elif tipo == "MAGO":
-  ataque = "magia"
-elif tipo == "MONGE":
-  ataque = "artes marciais"
+derrotas = int(input("Agora digite o seu número de derrotas: "))
+
+print("Legal! Estou calculando o seu saldo de vitórias e a sua posição no ranking...")
+
+time.sleep(3)
+
+resultado = vitorias - derrotas
+
+nivel = ""
+
+if resultado <= 10:
+  nivel = "Ferro"
+elif 11 <= resultado <= 20:
+  nivel = "Bronze"
+elif 21 <= resultado <= 50:
+  nivel = "Prata"
+elif 51 <= resultado <= 80:
+  nivel = "Ouro"
+elif 81 <= resultado <= 90:
+  nivel = "Diamante"
+elif 91 <= resultado <= 100:
+  nivel = "Lendário"
 else:
-  ataque = "shuriken"
+  nivel = "Imortal"
 
-class TipoGuerreiro:
-    def __init__(self, nome, idade, tipo, ataque):
-        self.nome = nome
-        self.idade = idade
-        self.tipo = tipo
-        self.ataque = ataque
+print(f"O herói tem saldo de {resultado} e está no nível de {nivel}")
 
-    def escrever(self):
-        print(f"O herói {self.nome} tem {self.idade} anos e está na classe {self.tipo}.")
-        print(f"O {self.tipo} atacou usando {self.ataque}.")
+time.sleep(2)
 
-heroi = TipoGuerreiro(nome, idade, tipo, ataque)
-heroi.escrever()
+posicao = ""
 
-xp = ""
+if nivel == "Ferro":
+  posicao = 7
+elif nivel == "Bronze":
+  posicao = 6
+elif nivel == "Prata":
+  posicao = 5
+elif nivel == "Ouro":
+  posicao = 4
+elif nivel == "Diamante":
+  posicao = 3
+elif nivel == "Lendário":
+  posicao = 2
+else:
+  posicao = 1
 
-while True:
-    try:
-        xp = int(input("Digite o seu xp para descobrir a força do seu ataque: [Digite um número entre 1 e 10]: "))
-        if 1 <= xp <= 10:
-            break
-        else:
-            print("Número fora do intervalo permitido (1 a 10). Tente novamente.")
-    except ValueError:
-        print("Entrada inválida. Por favor, digite um número válido.")
+print(f"{nickname} está na posição {posicao} no ranking.")
 
-print(f"Força igual a {xp * 100}.")
+while posicao >1:
+  print("Continue assim para chegar no topo!")
+  break
