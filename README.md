@@ -24,7 +24,7 @@ Repositório criado para o desafio da DIO “Calculadora de Partidas Rankeadas",
 **Versão 2**
 - Fiz o mesmo código, mas na linguagem Python
 - [Arquivo index-v2.py](https://github.com/raquelbarbieri/dio-desafio-calculadora-partidas/blob/main/index-v2.py)
-- Utilizei a IDE colab Google
+- Utilizei a IDE Google Colab
 
 #
 
@@ -32,4 +32,4 @@ Repositório criado para o desafio da DIO “Calculadora de Partidas Rankeadas",
 - Código em Python, mais enxuto e organizado
 - Adicionei laços de repetição e time.sleep
 - [Arquivo index-v3.py](https://github.com/raquelbarbieri/dio-desafio-calculadora-partidas/blob/main/index-v3.py)
-- Utilizei a IDE colab Google
+- Utilizei a IDE Google Colab
